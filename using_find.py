@@ -16,6 +16,13 @@ def find():
     
     query = {'type':'exam'}
     
+    try:
+        doc = scores.find(query)
+    
+    except Exception as e:
+        print("Unexpected error:", type(e), e)
+
+    print(doc)
 
 
 def find_one():
