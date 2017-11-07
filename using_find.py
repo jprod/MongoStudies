@@ -9,15 +9,14 @@ connection = pymongo.MongoClient("mongodb://localhost")
 db=connection.school
 scores = db.scores
 
-"""
+
 def find():
     
     print("find, reporting for duty")
     
     query = {'type':'exam'}
     
-    try:
-"""
+
 
 def find_one():
     
